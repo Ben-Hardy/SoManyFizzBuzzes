@@ -1,10 +1,9 @@
 # SoManyFizzBuzzes
 My goal is to write fizzbuzz in as many languages as possible
 
-How to run various fizzbuzzes:
 
 
-
+###How to run various fizzbuzzes:
 
 #### Racket
 To run the Racket FizzBuzz, one needs DrRacket or the Racket command line tools.
