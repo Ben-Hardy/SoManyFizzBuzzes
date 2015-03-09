@@ -25,5 +25,5 @@ To run it, load the file and use the following as input in the DrRacket prompt:
 
 #### FORTRAN 90
 
-it should compile and run just fine with `gfortran fizzbuzz.f90` and then `./a.out`. The output formatting is messed up but for never having done fortran I was impressed I got this far in 10 minutes.
+it should compile and run just fine with `gfortran fizzbuzz.f90` and then `./a.out`. The output formatting is messed up but for never having done fortran I was impressed I got this far in 10ish minutes. I haven't tested it on Linux yet, but it plays nicely with the implementation of GCC downloaded on Mac via Homebrew (GCC version 4.9).
 
