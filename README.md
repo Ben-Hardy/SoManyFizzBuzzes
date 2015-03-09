@@ -23,5 +23,7 @@ To run it, load the file and use the following as input in the DrRacket prompt:
     (for ([i (in-range 1 100 1)])
         (fizzbuzz 3 5 i))
 
+#### FORTRAN 90
 
+it should compile and run just fine with `gfortran fizzbuzz.f90` and then `./a.out`. The output formatting is messed up but for never having done fortran I was impressed I got this far in 10 minutes.
 
