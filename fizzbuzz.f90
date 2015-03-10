@@ -5,15 +5,15 @@ PROGRAM FizzBuzz
     INTEGER, PARAMETER :: fizz = 3
     INTEGER, PARAMETER :: buzz = 5
 
-    do i = 1, 100, 1
-    if (MOD(i, fizz) == 0 .and. MOD(i, buzz) == 0) then
+    DO i = 1, 100, 1
+    IF (MOD(i, fizz) == 0 .AND. MOD(i, buzz) == 0) THEN
         write(*,*) "FizzBuzz"
-    else if (MOD(i, fizz) == 0) then
+    ELSE IF (MOD(i, fizz) == 0) THEN
         write(*,*) "Fizz"
-    else if (MOD(i, buzz) == 0) then
+    ELSE IF (MOD(i, buzz) == 0) THEN
         write(*,*) "Buzz"
-    else 
+    ELSE 
         write(*,*) i
-    end if
-    end do
+    END IF
+    END DO
 END PROGRAM FizzBuzz
