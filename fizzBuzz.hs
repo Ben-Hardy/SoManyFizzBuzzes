@@ -8,7 +8,7 @@ fizzBuzz fizz buzz num | num `mod` fizz == 0 && num `mod` buzz == 0 = "FizzBuzz"
 	|  num `mod` buzz == 0 = "Buzz"
 	| otherwise = show num
 
-
+fizzBuzzer :: Int -> Int -> [Int] -> [[Char]]
 fizzBuzzer fizz buzz [] = []
 fizzBuzzer fizz buzz (x:[]) = (fizzBuzz fizz buzz x):[]
 fizzBuzzer fizz buzz (x:xs) = (fizzBuzz fizz buzz x):(fizzBuzzer fizz buzz xs)

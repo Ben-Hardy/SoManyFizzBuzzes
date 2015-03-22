@@ -30,3 +30,7 @@ it should compile and run just fine with `gfortran fizzbuzz.f90` and then `./a.o
 #### Java
 
 run `javac FizzBuzz.java` and then `java FizzBuzz`.
+
+#### Haskell
+
+The Haskell implementation can be run in two ways. One can use `ghc fizzBuzz.hs` to compile the prgram and then run it with `./fizzBuzz`. Alternatively, it can be run using GHCi by simply running GHCi, using the command `:l fizzBuzz.hs` and then either running `fizzBuzz fizz buzz num` on a single number or using the list-compatible function `fizzBuzzer`, which allows you to run a list of numbers by doing something similar to `fizzBuzzer 3 5 [1..100]` where the first two inputs are fizz and buzz, and the third is a list of integers.
