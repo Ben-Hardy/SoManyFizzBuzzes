@@ -38,3 +38,7 @@ The Haskell implementation can be run in two ways. One can use `ghc fizzBuzz.hs`
 #### Scala
 
 To run the Scala implementation, simply use `scala FizzBuzz.scala`. You also have the option of compiling and running using `scalac` if you want.
+
+#### Go
+
+To the the go-lang version, use the command `go run fizzBuzz.go`.
