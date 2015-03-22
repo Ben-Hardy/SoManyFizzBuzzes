@@ -6,7 +6,6 @@ object FizzBuzz {
 		else num + ""
 
 	def main(args: Array[String]) {
-		val a = (1 to 10).toList;
 		for ( item <- 1 to 100) {
 			println(fizzBuzz(3, 5, item));
 		}
