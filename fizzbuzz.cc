@@ -19,13 +19,14 @@ int main(int argc, char* argv[]){
 		num = atoi(argv[3]);
 	}
 
-	// functions in functions!
+	// yay for not having to declare a type for lambdas
 	auto fizzbuzz = [](int fizz, int buzz, int num) { 
 			if (num % fizz == 0 && num % buzz == 0) return "FizzBuzz";
 			else if (num % fizz == 0) return "Fizz";
 			else if (num % buzz == 0) return "Buzz";
-			else return	std::to_string(num).c_str();
-	}; 
+			else return	std::to_string(num).c_str(); // because auto deduces the type of the 
+	};                                               // other strings to const char* rather than
+                                                     // std::string.	
 	
 
 	for (auto i = 0; i < num; i++)
