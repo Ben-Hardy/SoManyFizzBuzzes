@@ -11,6 +11,12 @@ Pretty easy, run `gcc fizzbuzz.c` and then `./a.out` or whatever you named the b
 
 Arguments are available. By default it runs as fizz = 3, buzz = 5, and range of 1 to 100. You can either specify new fizz and buzz values, or new fizz, buzz, and maximum values.
 
+#### C++
+
+This version is built using C++14/C++1y magic (the type-deduced lambda expression) so it needs to be compiled with 'g++ -std=c++1y fizzbuzz.cc'. On Mac, it requires version 6.1 of the Apple clang compiler (or the version of GCC on Homebrew). On Linux it requires a fairly new version of GCC or Clang.
+
+It has the same argument stuff available as the C version.
+
 #### Python
 
 run `python fizzbuzz.py` in a terminal.
