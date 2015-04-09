@@ -7,7 +7,7 @@ int main(int argc, char* argv[]){
 	// actually declaring types is for the weak!
 	auto fizz = 5;
 	decltype(fizz) buzz = 3;
-	decltype(fizz) num = 101;
+	decltype(buzz) num = 101;
 
 	if (argc == 3) {
 		fizz = atoi(argv[1]);
