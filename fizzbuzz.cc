@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <numeric>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -26,12 +28,12 @@ int main(int argc, char* argv[]){
 			else if (num % buzz == 0) return "Buzz";
 			else return	std::to_string(num).c_str(); // because auto deduces the type of the 
 	};                                               // other strings to const char* rather than
-                                                     // std::string.	
-	
-
-	for (auto i = 0; i < num; i++)
-		std::cout << fizzbuzz(fizz, buzz, i) << std::endl;
-
+                                                     // std::string. The other option is to
+													 // cast all the others to std::string but meh
+	std::vector<int> i(num);
+	std::iota(std::begin(i), std::end(i) - 1, 1);
+	for (auto val : i)
+		std::cout << fizzbuzz(fizz, buzz, val) << std::endl;
     return 0;
 }
 
