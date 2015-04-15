@@ -1,6 +1,5 @@
 # SoManyFizzBuzzes
-My goal is to write fizzbuzz in as many languages as possible
-
+My goal is to write fizzbuzz in as many languages as possible. This will all be tested on Mac and Linux outside of Windows-specific stuff.
 
 
 ###How to run various fizzbuzzes:
@@ -48,3 +47,21 @@ To run the Scala implementation, simply use `scala FizzBuzz.scala`. You also hav
 #### Go
 
 To the the go-lang version, use the command `go run fizzBuzz.go`.
+
+#### Lua
+
+Simply run it with `lua fizzbuzz.lua`
+
+#### D
+
+I tested it with the LLVM D compiler. It is known working with LLVM D compiler version 0.15.0. Compile it with `ldc2 fizzbuzz.d` and run it with `./fizzbuzz`
+
+#### MATLAB
+
+Tested working in MATLAB. Load it into MATLAB like normal. It can be run by entering:
+
+    for i=1:100
+    fizzbuzz(3, 5, 100)
+    end
+
+into the terminal. Not tested in Octave as the Mac version of Octave was giving me some trouble.
