@@ -2,13 +2,13 @@ import sys
 
 def fizzBuzz(fizz, buzz, num):
 	if num % fizz == 0 and num % buzz == 0:
-		print "FizzBuzz"
+		print("FizzBuzz")
 	elif num % fizz == 0:
-		print "Fizz"
+		print("Fizz")
 	elif num % buzz == 0:
-		print "Buzz"
+		print ("Buzz")
 	else:
-		print num
+		print(num)
 
 def main():
 	for i in range(1,101):
