@@ -1,4 +1,4 @@
-function [ res ] = Untitled( fizz, buzz, num )
+function [ res ] = fizzbuzz( fizz, buzz, num )
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 
