@@ -23,13 +23,12 @@ int main(int argc, char* argv[]){
 
 	// yay for not having to declare a type for lambdas
 	auto fizzbuzz = [](int fizz, int buzz, int num) { 
-			if (num % fizz == 0 && num % buzz == 0) return "FizzBuzz";
-			else if (num % fizz == 0) return "Fizz";
-			else if (num % buzz == 0) return "Buzz";
-			else return	std::to_string(num).c_str(); // because auto deduces the type of the 
-	};                                               // other strings to const char* rather than
-                                                     // std::string. The other option is to
-													 // cast all the others to std::string but meh
+			if (num % fizz == 0 && num % buzz == 0) return (std::string) "FizzBuzz";
+			else if (num % fizz == 0) return (std::string) "Fizz";
+			else if (num % buzz == 0) return (std::string) "Buzz";
+			else return std::to_string(num); 
+	};                                               
+													
 	std::vector<int> i(num);
 	std::iota(std::begin(i), std::end(i) - 1, 1);
 	for (auto val : i)
